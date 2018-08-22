@@ -15,21 +15,18 @@ int main(){
         num[j] = num[j+1];
         num[j+1] = aux;
       }
-
-    } // fim L02
+    }
 
     // exibe a cada passada
     for(o = 0; o < 5; o++){
       printf("%d ", num[o]);
     }
     printf("\n"); // quebrar a linha
-
-  } // fim L01
+  }
 
 // Exibe resutaldo
   printf("\nResultado final\n");
   for(o = 0; o < 5; o++){
     printf("%d ", num[o]);
   }
-
 }

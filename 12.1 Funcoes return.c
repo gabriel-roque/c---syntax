@@ -13,5 +13,4 @@ int main(){
   int Somafinal = 0; //necessario do mesmo tipo
   Somafinal = soma(25,26);
   printf("%d", Somafinal);
-
 }
