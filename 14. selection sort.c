@@ -12,7 +12,7 @@ void selectionSort (int num[], int n){
     for(j = i+1; j < n; j++){ // 02
       // verifica
       if (num[j] < num[menValor]){
-        menValor = j;
+      menValor = j;
       }
     }
       // realiza a troca

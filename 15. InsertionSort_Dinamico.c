@@ -32,7 +32,7 @@ void insertionSort(int num[], int n[]){
 
 //metodo principal
 int main(){
-  int num[] = {10, 7, 1, 8, 6};
+  int num[] = {15, 7, 1, 8, 6};
   int n = sizeof(num) / sizeof(int); // 20 / 4 = 5
   /* para cada int e 4 bytes
   */
