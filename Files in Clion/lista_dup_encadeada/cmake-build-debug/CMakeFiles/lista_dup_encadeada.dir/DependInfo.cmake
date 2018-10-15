@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/main.c" "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/CMakeFiles/clion.dir/main.c.o"
+  "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/main.c" "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/CMakeFiles/lista_dup_encadeada.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

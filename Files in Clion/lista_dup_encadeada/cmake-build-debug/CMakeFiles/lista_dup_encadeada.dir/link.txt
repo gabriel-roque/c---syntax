@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/lista_dup_encadeada.dir/main.c.o  -o lista_dup_encadeada 

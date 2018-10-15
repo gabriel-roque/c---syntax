@@ -48,24 +48,13 @@ RM = /opt/jetbrians/Clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro"
+CMAKE_SOURCE_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/jetbrians/Clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/jetbrians/Clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/CMakeFiles" "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/CMakeFiles" "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named clion
+# Target rules for targets named lista_dup_encadeada
 
 # Build rule for target.
-clion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clion
-.PHONY : clion
+lista_dup_encadeada: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lista_dup_encadeada
+.PHONY : lista_dup_encadeada
 
 # fast build rule for target.
-clion/fast:
-	$(MAKE) -f CMakeFiles/clion.dir/build.make CMakeFiles/clion.dir/build
-.PHONY : clion/fast
+lista_dup_encadeada/fast:
+	$(MAKE) -f CMakeFiles/lista_dup_encadeada.dir/build.make CMakeFiles/lista_dup_encadeada.dir/build
+.PHONY : lista_dup_encadeada/fast
 
 main.o: main.c.o
 
@@ -129,7 +129,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) -f CMakeFiles/clion.dir/build.make CMakeFiles/clion.dir/main.c.o
+	$(MAKE) -f CMakeFiles/lista_dup_encadeada.dir/build.make CMakeFiles/lista_dup_encadeada.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -138,7 +138,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles/clion.dir/build.make CMakeFiles/clion.dir/main.c.i
+	$(MAKE) -f CMakeFiles/lista_dup_encadeada.dir/build.make CMakeFiles/lista_dup_encadeada.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -147,7 +147,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles/clion.dir/build.make CMakeFiles/clion.dir/main.c.s
+	$(MAKE) -f CMakeFiles/lista_dup_encadeada.dir/build.make CMakeFiles/lista_dup_encadeada.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -156,9 +156,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... clion"
+	@echo "... rebuild_cache"
+	@echo "... lista_dup_encadeada"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

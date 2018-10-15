@@ -1,4 +1,4 @@
-# Install script for directory: /home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro
+# Install script for directory: /home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

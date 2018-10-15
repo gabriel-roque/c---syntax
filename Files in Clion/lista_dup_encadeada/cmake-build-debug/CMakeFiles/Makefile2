@@ -59,45 +59,45 @@ RM = /opt/jetbrians/Clion/clion-2018.2.4/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro"
+CMAKE_SOURCE_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/clion.dir
+# Target rules for target CMakeFiles/lista_dup_encadeada.dir
 
 # All Build rule for target.
-CMakeFiles/clion.dir/all:
-	$(MAKE) -f CMakeFiles/clion.dir/build.make CMakeFiles/clion.dir/depend
-	$(MAKE) -f CMakeFiles/clion.dir/build.make CMakeFiles/clion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target clion"
-.PHONY : CMakeFiles/clion.dir/all
+CMakeFiles/lista_dup_encadeada.dir/all:
+	$(MAKE) -f CMakeFiles/lista_dup_encadeada.dir/build.make CMakeFiles/lista_dup_encadeada.dir/depend
+	$(MAKE) -f CMakeFiles/lista_dup_encadeada.dir/build.make CMakeFiles/lista_dup_encadeada.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/CMakeFiles" --progress-num=1,2 "Built target lista_dup_encadeada"
+.PHONY : CMakeFiles/lista_dup_encadeada.dir/all
 
 # Include target in all.
-all: CMakeFiles/clion.dir/all
+all: CMakeFiles/lista_dup_encadeada.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/clion.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clion.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/ponteiro/cmake-build-debug/CMakeFiles" 0
-.PHONY : CMakeFiles/clion.dir/rule
+CMakeFiles/lista_dup_encadeada.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/CMakeFiles" 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lista_dup_encadeada.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/lista_dup_encadeada/cmake-build-debug/CMakeFiles" 0
+.PHONY : CMakeFiles/lista_dup_encadeada.dir/rule
 
 # Convenience name for target.
-clion: CMakeFiles/clion.dir/rule
+lista_dup_encadeada: CMakeFiles/lista_dup_encadeada.dir/rule
 
-.PHONY : clion
-
-# clean rule for target.
-CMakeFiles/clion.dir/clean:
-	$(MAKE) -f CMakeFiles/clion.dir/build.make CMakeFiles/clion.dir/clean
-.PHONY : CMakeFiles/clion.dir/clean
+.PHONY : lista_dup_encadeada
 
 # clean rule for target.
-clean: CMakeFiles/clion.dir/clean
+CMakeFiles/lista_dup_encadeada.dir/clean:
+	$(MAKE) -f CMakeFiles/lista_dup_encadeada.dir/build.make CMakeFiles/lista_dup_encadeada.dir/clean
+.PHONY : CMakeFiles/lista_dup_encadeada.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/lista_dup_encadeada.dir/clean
 
 .PHONY : clean
 
