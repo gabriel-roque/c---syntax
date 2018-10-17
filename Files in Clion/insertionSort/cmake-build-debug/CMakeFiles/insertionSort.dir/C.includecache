@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/insertionSort/main.c
+stdio.h
+/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/insertionSort/stdio.h
+stdlib.h
+-
+
