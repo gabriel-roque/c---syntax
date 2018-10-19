@@ -5,62 +5,72 @@
 int inicio, fim;
 int pilha[MAX];
 
-void push(int x);
+void push (int x);
 int pop();
 int estaVazia();
 int estaCheia();
 int peek();
 
-int main() {
+int main(){
 
     inicio = 0;
     fim = 0;
 
-    push(2);
-    push(35);
-    push(60);
+    push(5);
+    push(33);
+    push(88);
 
-    int valor = pop();
-    printf("Ultimo valor excluido: %d", valor);
-    printf("\nO todo da pilha e: %d", peek());
+    pop();
 
+    int topo = peek();
+    printf("Ultimo elemento da pilha: %d\n",topo);
+
+    for (int i = 0; i < MAX ; ++i) {
+        printf("%d - ", pilha[i]);
+    }
 }
 
 
 int estaVazia(){
 
     return (inicio == fim);
+
 }
 
 int estaCheia(){
 
     return (fim == MAX);
+
 }
 
-int peek(){
+void push(int x){
 
-    int topoDafila = pilha[fim-1];
-
-    return topoDafila;
+    if(!estaCheia()){
+        pilha[fim++] = x;
+    }else{
+        printf("\nA PILHA ESTA CHEIA\n");
+    }
 
 }
 
 int pop(){
-    int aux;
-    if(!estaVazia()){
-        aux = pilha[fim-1];
-        fim--;
 
-        return aux;
+    int del;
+
+    if (!estaVazia()){
+        pilha[fim-1] = 0;
+        fim--;
+        return del;
     }else{
         printf("\nA PILHA ESTA VAZIA\n");
     }
+
 }
 
-void push(int x){
-    if(!estaCheia()){
-        pilha[fim++] = x;
-    }else{
-        printf("\nA PILHA ESTA CHEIA!\n");
-    }
+int peek(){
+
+    int topo = pilha[fim-1];
+
+    return topo;
+
 }
