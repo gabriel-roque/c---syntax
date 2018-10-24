@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/gabriel-odyssey/Documentos/estudos/c/c---syntax/Files in Clion/QT04/main.c
+stdio.h
+-
+stdlib.h
+-
+
